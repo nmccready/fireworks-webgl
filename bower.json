@@ -1,0 +1,22 @@
+{
+  "name": "fireworks-webgl",
+  "homepage": "https://github.com/nmccready/fireworks-webgl",
+  "authors": [
+    "Ondřej Žára <ondrej.zara@gmail.com>"
+  ],
+  "description": "\"fireworks in webgl\"",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gl-matrix": "~2.3.1"
+  }
+}

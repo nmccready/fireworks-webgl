@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>WebGL + Web Audio API = Fireworks</title>
-		<script src="js/gl-matrix-min.js"></script>
+		<script src="bower_components/gl-matrix/dist/gl-matrix-min.js"></script>
 		<script src="js/camera.js"></script>
 		<script src="js/program.js"></script>
 		<script src="js/particleset.js"></script>
@@ -11,41 +11,14 @@
 		<script src="js/explosion.js"></script>
 		<script src="shaders/particleset.js"></script>
 		<script src="shaders/points.js"></script>
-		<script src="js/jukebox.js"></script>
+		<script src="js/boomboom.js"></script>
 		<script src="js/render.js"></script>
 
 		<link rel="stylesheet" href="style.css" />
 	</head>
 
 	<body>
-		<div id="info">
-			<a target="_blank" href="http://ondras.zarovi.cz/">Ondřej Žára</a>
-			 / Happy New 2015 / 
-			<a target="_blank" href="https://github.com/ondras/fireworks-webgl">GitHub</a>
-		</div>
-		<div id="banner"></div>
-		<div id="jukebox">
-			<input type="radio" name="mode" value="url" id="mode-url" />
-			<label for="mode-url">Custom URL</label>
-			<input type="radio" checked="checked" name="mode" value="playlist" id="mode-playlist" />
-			<label for="mode-playlist">Built-in playlist</label>
-			<input type="radio" name="mode" value="file" id="mode-file" />
-			<label for="mode-file">Custom local file</label>
-			<form id="playlist">
-				<button id="prev">&#9668;</button>
-				<span id="current"></span>
-				/
-				<span id="total"></span>
-				<button id="next">&#9658;</button>
-			</form>
-			<form id="url">
-				The resource must be served with proper CORS headers.<br/>
-				<input type="text" size="40" placeholder="Enter song URL" />
-				<input type="submit" value="Play" />
-			</form>
-			<form id="file">
-				<input type="file" />
-			</form>
-		</div>
+		<!-- <div id="banner"></div> -->
+		<div id="boomboom"></div>
 	</body>
 </html>
